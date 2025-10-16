@@ -25,7 +25,6 @@ docker compose up -d spark-master spark-worker
 spark-submit --master spark://localhost:7077 --deploy-mode client src/main.py --n 10
 ```
 
-
 ### Запуск через Docker Compose
 1) Поднять кластер Spark (master + worker) и клиент:
 ```
@@ -34,9 +33,4 @@ docker compose up -d spark-master spark-worker
 2) Выполнить задачу из контейнера клиента в client-режиме (пример с N=10):
 ```
 docker compose run --rm client /opt/bitnami/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client src/main.py --n 10
-```
-
-Остановить кластер:
-```
-docker compose down
 ```
