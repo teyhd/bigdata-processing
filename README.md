@@ -1,12 +1,12 @@
-# parallel-distributed-bigdata-processing
-Tasks from Parallel and distributed big data processing ITMO class
+# Bigdata-processing
+Parallel and distributed big data 
+
+
+## Lab #1: PySpark, N-th Fibonacci number
+
+Вычисление N-го числа Фибоначчи с использованием PySpark в режиме клиента (`--deploy-mode=client`).
 
 ---
-
-## Общие требования
-- Python >=3.10
-- Poetry
-- Docker + Docker Compose (для Spark-кластера)
 
 ## Установка
 ### Локальная установка
@@ -25,10 +25,6 @@ pytest -v
 ```
 
 ---
-
-## Lab #1: PySpark, N-th Fibonacci number
-
-Вычисление N-го числа Фибоначчи с использованием PySpark в режиме клиента (`--deploy-mode=client`).
 
 ### Структура
 - `src/lab1/fibonacci.py` — алгоритм fast doubling
